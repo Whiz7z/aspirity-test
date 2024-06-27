@@ -2,10 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
+/* *{
+  outline : 1px solid red;
+} */
+
+@layer components {
+  .label-gray {
+    @apply text-[#76787A] text-[16px] font-normal;
+  }
+
+  .label-position {
+    @apply text-[#B0B1B6] text-[14px] font-normal;
+  }
+
+  .label-white {
+    @apply text-[#E1E3E6] text-[16px] font-normal;
+  }
+  .card-title {
+    @apply text-xl font-bold mb-2;
+  }
+  .card-body {
+    @apply text-gray-700;
+  }
+}
+
 :root {
-  --foreground-rgb: 0, 0, 0;
+  --foreground-rgb: 20, 20, 20;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+}
+
+html {
+  font-size: 62.5%;
+  /* font-family: "Roboto", sans-serif; */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,14 +45,13 @@
   }
 }
 
+
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgba(20,20,20,1
+  );
+  
+  
 }
 
 @layer utilities {

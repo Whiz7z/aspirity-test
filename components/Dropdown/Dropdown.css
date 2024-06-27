@@ -1,0 +1,22 @@
+.transition-transform {
+  transition: transform 0.1s ease, opacity 0.1s ease;
+}
+
+.entering {
+  transform: scale(0.95);
+  opacity: 0;
+}
+
+.entered {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.leaving {
+  transform: scale(0.95);
+  opacity: 0;
+}
+
+.closed {
+  display: none;
+}
