@@ -12,6 +12,8 @@ import ProfileInfoForm from "./ProfileInfoForm";
 
     console.log('ok? -- ',response.ok)
     const result = await response.json();
+
+    console.log('result -- ',result)
     return result;
   };
 
