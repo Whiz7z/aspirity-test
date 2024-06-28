@@ -8,6 +8,8 @@ import ProfileInfoForm from "./ProfileInfoForm";
       `${process.env.PUBLIC_URL}/api/get-profile-data`,
       { next: { tags: ["profile"] } }
     );
+
+    console.log('ok? -- ',response.ok)
     const result = await response.json();
     return result;
   };
