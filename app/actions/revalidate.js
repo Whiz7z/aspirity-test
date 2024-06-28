@@ -7,7 +7,7 @@ import fs from "fs";
 import path from "path";
 
 export async function editProfileAction(data) {
-  const filePath = path.join(process.cwd(), "profileData", "profileData.json");
+  const filePath = path.join("/tmp", "profileData", "profileData.json");
 
   // Ensure the directory exists
   if (!fs.existsSync(path.dirname(filePath))) {
