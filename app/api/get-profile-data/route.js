@@ -3,11 +3,11 @@ import fs from "fs";
 import path from "path";
 
 export async function GET() {
-  let path;
+  let returnPath;
   try {
     console.log("process.cwd -- ", process.cwd());
     const filePath = path.join(process.cwd(), "/profileData/profileData.json");
-    path = filePath;
+    returnPath = filePath;
 
     console.log("filepath -- ", filePath);
 
@@ -18,7 +18,11 @@ export async function GET() {
   } catch (error) {
     console.error("Error reading file:", error);
     return NextResponse.json(
-      { success: false, message: "Failed to read profile data.", path: path },
+      {
+        success: false,
+        message: "Failed to read profile data.",
+        path: returnPath,
+      },
       { status: 500 }
     );
   }
