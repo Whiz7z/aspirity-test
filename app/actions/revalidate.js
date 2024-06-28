@@ -8,7 +8,7 @@ import path from "path";
 
 export async function editProfileAction(data) {
 
-  const filePath = path.join(process.cwd(), "public/profileData/profileData.json");
+  const filePath = path.join(process.cwd(), "/profileData/profileData.json");
 
   fs.writeFile(filePath, JSON.stringify(data, null, 2), (err) => {
     if (err) {
