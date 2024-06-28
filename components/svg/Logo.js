@@ -75,7 +75,7 @@ const Logo = () => {
         </Link>
       </div>
 
-      <div className="cursor-pointer lg:block self-center">
+      <div className="cursor-pointer hidden lg:block self-center">
         <Link href="/" className="cursor-pointer lg:block">
           <svg
             width="135"
