@@ -4,6 +4,7 @@ import Link from "next/link";
 import ProfileInfoForm from "./ProfileInfoForm";
 
   const getProfileData = async () => {
+    console.log('get profile data url -- ', `${process.env.PUBLIC_URL}/api/get-profile-data`)
     const response = await fetch(
       `${process.env.PUBLIC_URL}/api/get-profile-data`,
       { next: { tags: ["profile"] } }
